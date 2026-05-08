@@ -5,14 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
-@DiscriminatorValue("CUR")
-public class CurrentAccount extends BankAccount{
-
+@DiscriminatorValue("CA")
+@Data @NoArgsConstructor @AllArgsConstructor
+public class CurrentAccount extends BankAccount {
     private double overDraft;
-
 }
 
