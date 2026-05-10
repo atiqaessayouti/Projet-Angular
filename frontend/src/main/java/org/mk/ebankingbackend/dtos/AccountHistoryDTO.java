@@ -1,10 +1,8 @@
-package org.sdi.ebankinng.ditos;
-
+package org.mk.ebankingbackend.dtos;
 
 import lombok.Data;
 
 import java.util.List;
-
 @Data
 public class AccountHistoryDTO {
     private String accountId;

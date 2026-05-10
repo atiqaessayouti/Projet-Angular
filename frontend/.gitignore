@@ -1,0 +1,53 @@
+# =========================
+# BACKEND (Spring Boot)
+# =========================
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE - IntelliJ / STS / NetBeans
+.idea
+*.iws
+*.iml
+*.ipr
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+
+.vscode/
+
+# =========================
+# FRONTEND (Angular)
+# =========================
+node_modules/
+dist/
+out-tsc/
+bazel-out/
+.angular/cache/
+
+npm-debug.log*
+yarn-error.log*
+
+# coverage
+coverage/
+
+# environment
+.env
+
+# =========================
+# SYSTEM
+# =========================
+.DS_Store
+Thumbs.db

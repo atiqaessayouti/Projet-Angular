@@ -1,21 +1,22 @@
-package org.sdi.ebankinng;
+package org.mk.ebankingbackend;
 
-import org.sdi.ebankinng.ditos.BankAccountDTO;
-import org.sdi.ebankinng.ditos.CurrentBankAccountDTO;
-import org.sdi.ebankinng.ditos.CustomerDTO;
-import org.sdi.ebankinng.ditos.SavingBankAccountDTO;
-import org.sdi.ebankinng.entites.*;
-import org.sdi.ebankinng.enums.OperationType;
-
-import org.sdi.ebankinng.exeptions.CustomerNotFoundException;
-import org.sdi.ebankinng.repositores.AccountOperationRepository;
-import org.sdi.ebankinng.repositores.BankAccountRepository;
-import org.sdi.ebankinng.repositores.CustomerRepository;
-import org.sdi.ebankinng.services.BankAccountService;
+import org.mk.ebankingbackend.dtos.BankAccountDTO;
+import org.mk.ebankingbackend.dtos.CurrentBankAccountDTO;
+import org.mk.ebankingbackend.dtos.CustomerDTO;
+import org.mk.ebankingbackend.dtos.SavingBankAccountDTO;
+import org.mk.ebankingbackend.entities.*;
+import org.mk.ebankingbackend.enums.AccountStatus;
+import org.mk.ebankingbackend.enums.OperationType;
+import org.mk.ebankingbackend.exceptions.CustomerNotFoundException;
+import org.mk.ebankingbackend.repositories.AccountOperationRepository;
+import org.mk.ebankingbackend.repositories.BankAccountRepository;
+import org.mk.ebankingbackend.repositories.CustomerRepository;
+import org.mk.ebankingbackend.services.BankAccountService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.Date;
